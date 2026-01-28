@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadinho António</title><link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="banner-title">ENGENHEIRO INFORMÁTICO & UI</div>
+                    <div class="banner-brand">VASCONCELOS ANTÓNIO</div>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-picture">
+                    <div class="play-icon"></div>
+                </div>
+
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <h1>
+                            Vasconcelos António
+                            <span class="verified">✓</span>
+                        </h1>
+                        <p class="profile-description">
+                            Engenheiro Informático | Desenvolvedor de Software.<br>Stay Hard!
+                        </p>
+                        <div class="profile-meta">
+                            <span> Startaper</span>
+                            <span> CEO da Raptor</span>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="joinBtn">Participar</button>
+                        <button class="btn btn-secondary">⋯</button>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab active" onclick="switchTab('post')">Postagens</div>
+                    <div class="tab" onclick="switchTab('introduction')">Introdução</div>
+                </div>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-tab" onclick="filterPosts('popular')">Criatividade</button>
+                <button class="filter-tab active" onclick="filterPosts('latest')">Especialista</button>
+                <button class="filter-tab" onclick="filterPosts('important')">Referência</button>
+                <button class="filter-tab" onclick="filterPosts('worry')">Preocupação</button>
+            </div>
+
+            <div class="content-area" id="contentArea">
+                <div id="postContent">
+                    <div class="pinned-header">
+                        📌 Projeto Recente
+                    </div>
+                    <div class="nu-container">
+                        <h2 class="headline">Conheça a fingrow. Um app para tudo</h2>
+
+                        <div class="accordion-wrapper" id="carouselTrack">
+                            <div class="card active" onclick="manualSelect(0)">
+                                <img src="./assets/img/caça-russo.jpg"
+                                    alt="Shopping">
+                            </div>
+                            <div class="card" onclick="manualSelect(1)">
+                                <img src=""
+                                    alt="Em breve login-fingrow.jpg">
+                            </div>
+                            <div class="card" onclick="manualSelect(2)">
+                                <img src=""
+                                    alt="Em breve painel-fingrow.jpg">
+                            </div>
+
+                        </div>
+
+                        <div class="info-bar">
+
+                            <div class="text-content" id="textContent">
+                                <h3 id="descTitle">Facilite seus planos com o Shopping do Nubank.</h3>
+                                <a href="#" class="nu-link" id="descLink">Conheça o Shopping do Nubank <svg
+                                        viewBox="0 0 10 16">
+                                        <path
+                                            d="M2.28564 14.5716L1.14278 13.4287L6.57136 8.00018L1.14278 2.57161L2.28564 1.42875L8.85707 8.00018L2.28564 14.5716Z" />
+                                    </svg></a>
+                            </div>
+
+                            <div class="controls">
+                                <div class="progress-pill">
+                                    <div class="indicator active"></div>
+                                    <div class="indicator"></div>
+                                    <div class="indicator"></div>
+                                </div>
+
+                                <button class="toggle-btn" id="toggleBtn" aria-label="Pausar">
+                                    <svg id="icon-pause" viewBox="0 0 14 16" width="14">
+                                        <path d="M1 16h4V0H1v16zm8-16v16h4V0H9z" />
+                                    </svg>
+                                    <svg id="icon-play" viewBox="0 0 14 16" width="14" style="display:none">
+                                        <path d="M0 0l14 8-14 8V0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div id="introductionContent" style="display: none;" class="pro-profile">
+    
+    <header class="pro-header">
+        <h1>Dadinho De Vasconcelos António</h1>
+        <p class="pro-subtitle">Engenheiro Informático & UI</p>
+        <p class="pro-location"><i class="fi fi-rr-marker"></i> Luanda, Angola</p>
+    </header>
+
+    <div class="pro-grid">
+        
+        <div class="pro-bio">
+            <div class="bio-section">
+                <h3> Perfil Profissional</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque maiores nobis maxime eius dignissimos labore pariatur placeat ad deserunt quia. A laborum quaerat officia voluptas amet temporibus omnis mollitia non!
+                </p>
+            </div>
+
+            <div class="bio-section">
+                <h3> Especialização Técnica</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et dicta dolore aliquam id rerum mollitia sapiente exercitationem sunt consectetur. Consequuntur soluta possimus porro corrupti aperiam accusamus necessitatibus iure fugiat?
+                </p>
+            </div>
+        </div>
+
+        <div class="pro-stack">
+            <h3>Tecnológica & Ferramentas</h3>
+        </div>
+    </div>
+</div>
+              <section></section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="joinModal">
+        <div class="modal-content">
+           <div class="modal-header">Entrar na Comunidade?</div>
+<div class="modal-text">
+    Você poderá discutir projetos, colaborações ou receber atualizações sobre meus trabalhos.
+    Envie uma mensagem para se conectar!
+</div>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+                <button class="btn btn-primary" onclick="confirmJoin()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <span class="notification-icon">✓</span>
+        <span id="notificationText"></span>
+    </div>
+
+
+   <footer class="footer">
+        <div class="footer-brand">
+            <div class="logo-mn">
+                <strong>Vasconcelos António.</strong>
+            </div>
+            <p>Desenvolvedor criativo.</p>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Produto</h4>
+                <ul>
+                    <li><a href="#">Visão Geral</a></li>
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="#">Soluções</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub </a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Privacidade</h4>
+                <ul>
+                    <li><a href="#">Termos</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Contato </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+    </body>
+</html>
